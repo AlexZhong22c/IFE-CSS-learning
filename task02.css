@@ -136,6 +136,13 @@ fieldset {
 #fieldset2 textarea {
   margin-top: 8px;
 }
+aside .unselectable {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+  /*onselectstart和unselectable在html那里*/
+}
 aside button {
   display: block;
   box-sizing: border-box;
@@ -147,6 +154,9 @@ aside button {
   margin: 10px auto;
   font-size: 16px;
   color: #fff;
+}
+aside fieldset {
+  border: 0;
 }
 #footer {
   height: 70px;
