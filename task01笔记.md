@@ -16,11 +16,10 @@
 
 为了写优雅的代码：img元素记得加alt属性
 
-### 表单控件的name属性
+### 表单控件
 
-name对于radio很重要
-
-name对于checkbox很重要
+- name对于radio很重要；name对于checkbox很重要
+- 对于表单中的单选radio控件和复选checkbox控件以及下拉框select控件，可以为radio, checkbox添加checked属性以及为option添加selected属性让其默认选中
 
 ------
 
@@ -54,9 +53,9 @@ fieldset元素 通常用来对表单的相关元素分组
 HTML的`<legend>`元素（也称为HTML的域说明元素（or HMTL
  Legend Field Element））代表一个用于表示它的父元素`<fieldset> `的内容的标题。
 
-### label属性
+### label标签
 
-HTML` <label>`元素表示用户界面中项目的标题。
+label标签，为input元素定义标注，改进了表单控件的可用性，当你点击到label标签时，会自动聚焦到对应控件上。
 
 #### 使用 label  "for" 属性 bind input "id"
 
@@ -221,7 +220,8 @@ Content categories 这个话题的主要内容都写到了我的博客里： [�
 
 ------
 
-`一般图片有caption时才使用figure元素和figcaption元素`
+- `一般图片有caption时才使用figure元素和figcaption元素`
+- 另外，当文档中的一些嵌入式内容，比如引用的图片，插图，表格，代码段等，可以作为独立的单元，当这部分转移到附录中或者其他页面时不会影响到主体，这样的元素都可以放在`<figure>`元素内，而且可以搭配其子元素`<figcaption>`作很好的元素说明或者备注信息
 
 #### figure元素
 

@@ -1,0 +1,165 @@
+body,
+h1,
+ul,
+li,
+p,
+label {
+  margin: 0;
+  padding: 0;
+}
+/*标注型*/
+.user_reviews {
+  border: 1px solid #aae;
+}
+.user_review {
+  border: 1px solid #000;
+  margin: 6px;
+}
+.user_review footer {
+  margin: 10px 60px;
+  font-size: 12px;
+  border: 1px solid #aee;
+}
+time {
+  border: 1px solid red;
+}
+article footer {
+  margin-left: 100px;
+}
+footer {
+  border: 1px solid red;
+}
+body {
+  background: #dedede;
+}
+/*header*/
+#header {
+  height: 60px;
+  background: #333;
+}
+#header img {
+  width: 60px;
+  height: 60px;
+  margin-left: 80px;
+  float: left;
+}
+nav ul {
+  margin-right: 80px;
+  float: right;
+  list-style: disc;
+}
+nav li {
+  line-height: 60px;
+  float: left;/*为了a的顺序从左到右*/
+  margin-right: 28px;
+  color: #fff;/*改变了disc的颜色*/
+}
+nav a {
+  color: #797bbb;
+  text-decoration: none;
+  font-weight: bolder;
+}
+nav a:hover {
+  color: #fff;
+}
+/*article*/
+.article, aside {
+  box-sizing: border-box;
+  width: 980px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  background: #fff;
+  border: 1px solid #cdcdcd;
+  box-shadow: 2px 2px 5px #888888;
+}
+.article .info {
+  line-height: 32px;
+  font-size: 12px;
+  color: #696969;
+}
+.article p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.article figure {
+  box-sizing: border-box;
+  border: 1px solid #c7c7c7;
+  width: 200px;
+  height: 210px;
+  text-align: center;
+  margin: 20px 0;
+}
+.article figcaption {
+  height: 50px;
+  line-height: 50px;
+}
+.article figure img {
+  box-sizing: border-box;
+  border: 1px solid #c7c7c7;
+  width: 160px;
+  height: 160px;
+}
+.article ol {
+  margin: 20px 40px;
+}
+article table {
+  width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-color: #ccc;
+}
+article table .thead {
+  background-color: #333;
+  color: #fff;
+  font-weight: bolder;
+}
+article table .tfoot {
+  background-color: #ccc;
+}
+fieldset {
+  margin: 30px auto;
+  padding: 10px;
+}
+#fieldset1 label,#fieldset2 span, #fieldset2 #textlabel {
+  width: 320px;
+  display: inline-block;
+  text-align: right;
+  line-height: 32px;
+  padding-right: 16px;
+}
+#fieldset1 span {
+  color: #ccc;
+}
+#fieldset2 #textlabel {
+  float: left;
+}
+#fieldset2 textarea {
+  margin-top: 8px;
+}
+aside button {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #3355d0;
+  border-radius: 8px;
+  height: 40px;
+  width: 80%;
+  margin: 10px auto;
+  font-size: 16px;
+  color: #fff;
+}
+#footer {
+  height: 70px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  border:1px solid #000;
+}
+#footer a {
+  color: #797bbb;
+}
+#footer a:hover {
+  color: #fff;
+}
