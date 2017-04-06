@@ -15,7 +15,13 @@
 
 如果想要形成三栏的布局，思路有二：
 
-要么运用margin形成三栏的布局，要么用BFC形成三栏的布局
+要么运用margin形成三栏的布局
+
+[demo](https://alexzhong22c.github.io/IFE-CSS-learning/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E6%8C%89%E6%99%AE%E9%80%9A%E9%A1%BA%E5%BA%8F%E7%BC%96%E5%86%99/1%E6%99%AE%E9%80%9A%E6%96%B9%E6%B3%95-%E7%94%A8margin%E5%88%86%E5%BC%80.html) --  [源码](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E6%8C%89%E6%99%AE%E9%80%9A%E9%A1%BA%E5%BA%8F%E7%BC%96%E5%86%99/1%E6%99%AE%E9%80%9A%E6%96%B9%E6%B3%95-%E7%94%A8margin%E5%88%86%E5%BC%80.html)
+
+要么用BFC形成三栏的布局
+
+[demo](https://alexzhong22c.github.io/IFE-CSS-learning/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E6%8C%89%E6%99%AE%E9%80%9A%E9%A1%BA%E5%BA%8F%E7%BC%96%E5%86%99/2%E4%BD%BF%E7%94%A8BFC%E6%96%B9%E6%B3%95.html) --  [源码](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E6%8C%89%E6%99%AE%E9%80%9A%E9%A1%BA%E5%BA%8F%E7%BC%96%E5%86%99/2%E4%BD%BF%E7%94%A8BFC%E6%96%B9%E6%B3%95.html)
 
 ### 先加载main栏
 
@@ -28,11 +34,13 @@
 
 当只使用负左外边距的方法时，能够实现**先加载main栏**，但是main栏的内容会被挡住。
 
+[demo](https://alexzhong22c.github.io/IFE-CSS-learning/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E5%85%88%E5%8A%A0%E8%BD%BDmain%E6%A0%8F/1main%E7%9A%84%E5%86%85%E5%AE%B9%E8%A2%AB%E6%8C%A1%E4%BD%8F.html) --  [源码](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E5%85%88%E5%8A%A0%E8%BD%BDmain%E6%A0%8F/1main%E7%9A%84%E5%86%85%E5%AE%B9%E8%A2%AB%E6%8C%A1%E4%BD%8F.html)
+
 解决 main栏的内容被挡住 的思路有二：
 
 1\. **双飞翼布局**
 
-2\.  **圣杯布局 **
+2\.  **圣杯布局**
 
 在本专题的最后，会介绍其他的方式来实现 三栏等高的 先加载main栏的 三栏式布局。
 
@@ -40,7 +48,7 @@
 
 #### 双飞翼布局
 
-淘宝的双飞翼布局：在原来的基础上多套了一层div，并且增设margin
+淘宝的双飞翼布局：在原来的基础上多套了一层div，并且增设margin。[2-1淘宝双飞翼布局demo](https://alexzhong22c.github.io/IFE-CSS-learning/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E5%85%88%E5%8A%A0%E8%BD%BDmain%E6%A0%8F/2-1%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80.html) --  [源码](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E5%85%88%E5%8A%A0%E8%BD%BDmain%E6%A0%8F/2-1%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80.html)
 
 ##### 好处：
 
@@ -53,7 +61,7 @@
 
 #### 圣杯布局
 
-圣杯布局的特点是它使用了padding和相对定位，当然它也使用了负左外边距
+圣杯布局的特点是它使用了padding和相对定位，当然它也使用了负左外边距。[2-2圣杯布局demo](https://alexzhong22c.github.io/IFE-CSS-learning/task03三栏布局/先加载main栏/2-2圣杯布局.html) --  [源码](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E5%85%88%E5%8A%A0%E8%BD%BDmain%E6%A0%8F/2-2%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80.html)
 
 ##### 好处：
 
@@ -66,6 +74,8 @@
 ##### 缺点：
 
 - 当浏览器宽度过窄时，子栏可能会消失，extra栏的内容可能会跑到主栏里面。
+
+[证明圣杯布局内部灵活的demo](https://alexzhong22c.github.io/IFE-CSS-learning/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E5%85%88%E5%8A%A0%E8%BD%BDmain%E6%A0%8F/2-2-X%E8%AF%81%E6%98%8E%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%E5%86%85%E9%83%A8%E7%81%B5%E6%B4%BB.html) -- [证明圣杯布局内部灵活的源码](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task03%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/%E5%85%88%E5%8A%A0%E8%BD%BDmain%E6%A0%8F/2-2-X%E8%AF%81%E6%98%8E%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%E5%86%85%E9%83%A8%E7%81%B5%E6%B4%BB.html)
 
 ---
 
