@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>1普通方法-用margin分开</title>
+    <style type="text/css">
+      body {
+        margin: 0;padding: 0;
+      }
+      .sub {
+        width: 190px;
+        float: left;
+
+        background:#faa;
+      }
+      .main {
+        margin-left: 200px;
+        margin-right: 240px;
+
+        background:#afa;
+      }
+      .extra {
+        width: 230px;
+        float: right;
+
+        background:#aaf;
+      }
+
+      /*修饰样式，可不写：*/
+      .main, .sub, .extra {
+        min-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-content"></div>
+    <div class="sub">sub</div>
+    <div class="extra">extra</div>
+    <div class="main">
+      按顺序加载，普通方法：用main区域的margin形成main区域。
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>1main的内容被挡住</title>
+    <style type="text/css">
+      #main-content {
+        width: 100%;
+      }
+      .main {
+        width:100%;
+        float:left;
+
+        background:#afa;
+      }
+      .sub {
+        width:190px;
+        float:left;
+        margin-left:-100%;
+        
+        background:#faa;
+      }
+      .extra {
+        width:230px;
+        float:left; 
+        margin-left:-230px;
+
+        background:#aaf;
+      }
+
+      /*修饰样式，可不写：*/
+      .main, .sub, .extra {
+        min-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">
+      <div class="main">main的内容被挡住。main的内容被挡住。main的内容被挡住。**当只使用负左外边距时**</div>
+      <div class="sub">Here is sub</div>
+      <div class="extra">Here is extra</div>
+    </div>
+  </body>
+</html>

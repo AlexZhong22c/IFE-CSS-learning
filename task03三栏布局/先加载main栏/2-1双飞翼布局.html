@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>2-1双飞翼布局</title>
+    <style type="text/css">
+      #main-content {
+        width: 100%;
+      }
+      .main {
+        width:100%;
+        float:left;/*仍是必须的*/
+        /*background:#afa;*/
+      }
+      .sub {
+        width:190px;
+        float:left;
+        margin-left:-100%;
+
+        background:#faa;
+      }
+      .extra {
+        width:230px;
+        float:left;
+        margin-left:-230px;
+
+        background:#aaf;
+      }
+      .content {
+        margin-left:200px;  /*与col-sub产生10像素距离*/
+        margin-right:240px; /*与col-extra产生10像素距离*/
+        
+        background:#afa;
+      }
+
+      /*修饰样式，可不写：*/
+      .main, .sub, .extra {
+        min-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">
+      <div class="main">
+        <div class="content">双飞翼布局：多套一层div,而且增设margin，main的内容不再被挡住了。</div>
+      </div>
+      <div class="sub">Here is sub</div>
+      <div class="extra">Here is extra</div>
+    </div>
+  </body>
+</html>

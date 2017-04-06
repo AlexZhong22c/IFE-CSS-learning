@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>2使用BFC方法</title>
+    <style type="text/css">
+      body {
+        margin: 0;padding: 0;
+      }
+      .sub {
+        width: 190px;
+        float: left;
+        margin-right: 10px;
+
+        background:#faa;
+      }
+      .main{
+        overflow: hidden;
+        /*纯粹是为了创建BFC*/
+
+        background:#afa;
+      }
+      .extra {
+        width: 230px;
+        float: right;
+        margin-left: 10px;
+
+        background:#aaf;
+      }
+
+      /*修饰样式，可不写：*/
+      .main, .sub, .extra {
+        min-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  代码简单到爆了 -->
+    <div id="main-content">
+      <div class="sub">sub</div>
+      <div class="extra">extra</div>
+      <div class="main">
+        使用BFC方法实现双飞翼布局，直接用overflow: hidden即可
+      </div>
+    </div>
+  </body>
+</html>

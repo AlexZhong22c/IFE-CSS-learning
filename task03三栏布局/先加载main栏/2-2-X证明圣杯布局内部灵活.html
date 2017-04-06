@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>2-2-X证明圣杯布局内部灵活</title>
+    <style type="text/css">
+      body {
+        margin: 0;padding: 0;
+      }
+      #main-content {
+        padding: 0 230px 0 190px;
+        /* hack:*/
+        /*overflow: hidden;*/
+        zoom:1;
+      }
+      .main {
+        width: 100%;
+        float: left;/*必须的*/
+        /*background:#afa;*/
+      }
+      .sub {
+        width: 190px;
+        float: left;
+        margin-left: -100%;
+
+        position: relative;
+        left: -190px;
+
+        background:#faa;
+      }
+    .extra {
+        width: 230px;
+        float: left;
+        margin-left: -230px;
+
+        position: relative;
+        right: -230px;
+
+        background:#aaf;
+    }
+    .content {
+      margin: 0 10px 0 10px;
+      background:#afa;
+    }
+
+    /*修饰样式，可不写：*/
+    .main, .sub, .extra {
+      min-height: 30px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">
+      <div class="main"><div class="content">多套一层div，这个demo证明圣杯布局的main内部很灵活</div></div>
+      <div class="sub">sub的内容依然可能会消失</div>
+      <div class="extra">原本extra的内容依然可能会跑到main那里</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>2-2圣杯布局</title>
+    <style type="text/css">
+      body {
+        margin: 0;padding: 0;
+      }
+      #main-content {
+        padding: 0 240px 0 200px;
+        /* hack:*/
+        /*overflow: hidden;*/
+        zoom:1;
+      }
+      .main {
+        width: 100%;
+        float: left;/*必须的*/
+
+        background:#afa;
+      }
+      .sub {
+        width: 190px;
+        float: left;
+        margin-left: -100%;
+
+        position: relative;
+        left: -200px;
+
+        background:#faa;
+      }
+    .extra {
+        width: 230px;
+        float: left;
+        margin-left: -230px;
+
+        position: relative;
+        right: -240px;
+
+        background:#aaf;
+    }
+
+    /*修饰样式，可不写：*/
+    .main, .sub, .extra {
+      min-height: 30px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">
+      <div class="main">我是main，我想说当浏览器的宽度过小时</div>
+      <div class="sub">sub的内容可能会消失</div>
+      <div class="extra">extra的内容可能会跑到main那里</div>
+    </div>
+  </body>
+</html>
