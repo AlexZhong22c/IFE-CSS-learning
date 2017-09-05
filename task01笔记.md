@@ -1,8 +1,10 @@
 原博文地址：https://alexzhong22c.github.io/2017/03/27/ife-css-task01/
 
-## 常见问题总结
+task01其实就是对HTML的学习，对应的代码其实就是task02的[demo](https://alexzhong22c.github.io/IFE-CSS-learning/task02.html)的HTML部分。
 
-### 和强调相关的元素
+## 细节问题总结
+
+### i/b/em/strong元素
 
 `<em>` 用于对文本内容进行强调，强调位置的不同通常会改变句子的含义。如果仅仅在语态或语气上为了突出某一个文本，那应该使用`<i>`。
 
@@ -12,11 +14,11 @@
 
 ### 单标签要闭合吗
 
-一句话总结，xhtml严格要求空标签必须自闭合,html5又不要求自闭合但是兼容xhtml的自闭合写法。
+一句话总结，xhtml严格要求空标签必须自闭合，html5又不要求自闭合但是兼容xhtml的自闭合写法。
 
 ### alt属性
 
-为了写优雅的代码：img元素记得加alt属性
+为了写优雅的代码：img元素记得加alt属性。
 
 ### 表单控件
 

@@ -4,10 +4,6 @@
 
 在文章 [CSS选择器优先级](https://alexzhong22c.github.io/2017/03/31/css-selectors-specificity/) 中我整合了这部分笔记。
 
-## H5加id的观点
-
-虽然语义化标签好用，但是当它需要加id的时候还是加吧：id="header"
-
 ## list-style-xxx
 
 我们常用list-style，实则它是一个 简写属性。
@@ -110,7 +106,7 @@ CSS代码：
 
 [text-align--CSS88](http://www.css88.com/book/css/properties/text/text-align.htm) 还介绍了单行文字怎么应用justify
 
-## fieldset
+## fieldset默认样式隐藏
 
 看到一篇文章介绍 [Extjs FieldSet组件](http://canfly2010.iteye.com/blog/678584) 的文章很有趣，这个组件的目的是将fieldset的边框去掉或者改变内边距。
 
