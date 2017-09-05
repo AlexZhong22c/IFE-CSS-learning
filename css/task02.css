@@ -99,6 +99,12 @@ nav a:hover {
   width: 160px;
   height: 160px;
 }
+.article dl img {
+  box-sizing: border-box;
+  border: 1px solid #c7c7c7;
+  width: 160px;
+  height: 160px;
+}
 .article ol {
   margin: 20px 40px;
 }
