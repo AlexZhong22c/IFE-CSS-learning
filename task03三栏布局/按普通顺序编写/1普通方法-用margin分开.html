@@ -7,6 +7,7 @@
       body {
         margin: 0;padding: 0;
       }
+      #main-content { background: gray; }
       .sub {
         width: 190px;
         float: left;
@@ -14,6 +15,7 @@
         background:#faa;
       }
       .main {
+        /*可见这些margin是考虑了两边栏的宽度的：*/
         margin-left: 200px;
         margin-right: 240px;
 
@@ -25,7 +27,17 @@
 
         background:#aaf;
       }
-
+      /*简单演示闭合浮动：*/
+      .clearfix:before, .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+      }
+      .clearfix:after {
+        clear: both;
+      }
+      .clearfix {
+        *zoom: 1;
+      }
       /*修饰样式，可不写：*/
       .main, .sub, .extra {
         min-height: 30px;
@@ -33,11 +45,12 @@
     </style>
   </head>
   <body>
-    <div id="main-content">
+    <div id="main-content" class="clearfix">
       <div class="sub">sub</div>
       <div class="extra">extra</div>
       <div class="main">
-        按顺序加载，普通方法：用main区域的margin形成main区域。
+        按顺序加载，普通方法：用main区域的margin形成main区域。<br>
+        父元素的高度始终为子元素中最高的高度。
       </div>
     </div>
   </body>

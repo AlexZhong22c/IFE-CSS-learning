@@ -7,6 +7,7 @@
       body {
         margin: 0;padding: 0;
       }
+      #main-content { background: gray; }
       .sub {
         width: 190px;
         float: left;
@@ -15,9 +16,8 @@
         background:#faa;
       }
       .main{
+        /*纯粹是为了创建BFC：*/
         overflow: hidden;
-        /*纯粹是为了创建BFC*/
-
         background:#afa;
       }
       .extra {
@@ -27,7 +27,17 @@
 
         background:#aaf;
       }
-
+      /*简单演示闭合浮动：*/
+      .clearfix:before, .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+      }
+      .clearfix:after {
+        clear: both;
+      }
+      .clearfix {
+        *zoom: 1;
+      }
       /*修饰样式，可不写：*/
       .main, .sub, .extra {
         min-height: 30px;
@@ -35,11 +45,12 @@
     </style>
   </head>
   <body>
-    <div id="main-content">
+    <div id="main-content" class="clearfix">
       <div class="sub">sub</div>
       <div class="extra">extra</div>
       <div class="main">
-        使用BFC方法实现双飞翼布局，直接用overflow: hidden即可
+        使用BFC方法实现三栏式布局，对main栏用的是overflow: hidden<br>
+        main栏的BFC是为了让两边浮动元素的margin生效
       </div>
     </div>
   </body>
