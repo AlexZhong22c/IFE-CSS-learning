@@ -8,8 +8,8 @@
 
 
 
-[task01笔记](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task01笔记.md) task01对应的代码其实就是[task02-demo](https://ife-css-learning.az22c.vercel.app/task02.html)的HTML部分。
+[task01笔记](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task01笔记.md) task01对应的代码其实就是[task02-demo](https://alexzhong22c.github.io//IFE-CSS-learning/task02.html)的HTML部分。
 
-[task02笔记](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task02笔记.md) 对应 [task02-demo](https://ife-css-learning.az22c.vercel.app/task02.html)
+[task02笔记](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task02笔记.md) 对应 [task02-demo](https://alexzhong22c.github.io//IFE-CSS-learning/task02.html)
 
-[task03笔记](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task03笔记.md) 对应 [task03-demo](https://ife-css-learning.az22c.vercel.app/task03.html)
+[task03笔记](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task03笔记.md) 对应 [task03-demo](https://alexzhong22c.github.io//IFE-CSS-learning/task03.html)
