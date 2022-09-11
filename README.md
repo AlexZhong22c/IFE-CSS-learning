@@ -10,5 +10,3 @@
 [task02笔记](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task02笔记.md) 对应 [task02-demo](https://ife-css-learning.az22c.vercel.app/task02.html)
 
 [task03笔记](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/task03笔记.md) 对应 [task03-demo](https://ife-css-learning.az22c.vercel.app/task03.html)
-
-[闭合浮动和BFC和阻止上下外边距的合并](https://github.com/AlexZhong22c/IFE-CSS-learning/blob/master/闭合浮动和BFC和阻止上下外边距的合并.md)
